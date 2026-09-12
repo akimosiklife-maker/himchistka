@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+.head-fon{
+    background-image: url(../images/fon-header.png);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 0 0 20px 20px;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+.head-fon img{
+    display: block;
+    width: 40px;
+    height: auto;
+    margin: 15px 25px 0 25px;
+}
+.head-line{
+    background: linear-gradient(to left, #007FFF, #00BFFF);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.head-line a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    touch-action: manipulation;
+    user-select: none;
+}
+.head-line a:active{
+    transform: scale(0.95);
+}
+
+.head-fon .icon{
+    width: 28px;
+}
+
