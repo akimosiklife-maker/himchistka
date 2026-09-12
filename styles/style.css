@@ -77,8 +77,8 @@ body{
     font-size: 20px;
 }
 .zagolovok{
-    color: whitesmoke;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: #06336d;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);*/
     line-height: 30px;
 }
 
