@@ -2,7 +2,13 @@
     margin: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    background-color: whitesmoke;
+}
+
 .head-fon{
     background-image: url(../images/fon-header.png);
     width: 100%;
@@ -18,7 +24,7 @@
     display: block;
     width: 55px;
     height: auto;
-    margin: 15px 0 0 25px;
+    margin: 0 0 0 25px;
 }
 .head-line{
     background: linear-gradient(to left, #007FFF, #00BFFF);
@@ -27,10 +33,11 @@
     align-items: center; 
     border-radius: 0 0 15px 15px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    padding-top: 10px;
 }
 
 .head-line a{
-    margin-top: 20px;
+    
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -52,5 +59,42 @@
 }
 .head-fon .icon:active{
     transform: scale(0.95);
+}
+
+.call-container{
+    margin: 10px 25px 10px 0;
+}
+.call{
+    color: #042b5e;
+    text-align: right;
+    font-size: 12px;
+}
+
+.zag-container{
+    margin: 0 0 0 25px;
+}
+.span-zagolovok{
+    font-size: 20px;
+}
+.zagolovok{
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 30px;
+}
+
+.mission-container{
+    background-color: white;
+    padding: 10px 0 10px 10px;
+    border-radius: 10px;
+    max-width: 35%;
+    height: auto;
+    margin: 25px 0 0 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.mission{
+    color: #042b5e;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
 }
 
