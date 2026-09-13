@@ -132,8 +132,7 @@ body::after {
     padding: 20px; 
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 10px;
-             
+    margin-bottom: 10px;          
 }
 
 .card-left,
@@ -144,9 +143,18 @@ body::after {
     border-radius: 20px;
     box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
     margin: 0 10px;
-    
-    
 }
+
+.container ul{
+    background-color: white;
+    padding: 8px;
+    list-style: none;
+    border-radius: 20px;
+}
+.container span{
+    font-weight: bold;
+}
+
 
 /* =========================================
    5. ПОДВАЛ (МОБИЛКА)
