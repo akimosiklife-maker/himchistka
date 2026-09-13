@@ -1,100 +1,282 @@
-*{
-    margin: 0;
+/*1. СБРОС И БАЗА (МОБИЛКА ПО УМОЛЧАНИЮ)*/
+*, *::before, *::after {
     box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-color: whitesmoke;
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #1a202c;
+    line-height: 1.6;
+    font-size: 16px;
+
+    /* База: мягкий градиент */
+    background: linear-gradient(180deg, #e8f4f8 0%, #84bbd4 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.head-fon{
-    background-image: url(../images/fon-header.png);
-    width: 100%;
+
+/* Два декоративных пятна через псевдоэлементы */
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(100, 181, 246, 0.25) 0%, transparent 70%);
+}
+
+body::before {
+    width: 400px;
     height: 400px;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    border-radius: 0 0 20px 20px;
-    justify-content: center;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    top: -120px;
+    right: -100px;
 }
-.head-fon img{
-    display: block;
-    width: 55px;
-    height: auto;
-    margin: 0 0 0 25px;
+
+body::after {
+    width: 350px;
+    height: 350px;
+    bottom: -100px;
+    left: -80px;
+    background: radial-gradient(circle, rgba(66, 165, 245, 0.2) 0%, transparent 70%);
 }
-.head-line{
-    background: linear-gradient(to left, #007FFF, #00BFFF);
+
+
+
+/*  2. КОНТЕЙНЕР (МОБИЛКА)*/
+.container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+/*  3. HERO СЕКЦИЯ (МОБИЛКА)*/
+.hero {
+    text-align: center;
+    padding: 20px 0 60px;
+}
+
+
+.hero h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f2b46;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 24px;
+}
+
+.bnt-messange {
+    display: inline-block;
+    background-color: #0f2b46;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+    transition: all 0.3s ease;
+}
+
+.bnt-messange:hover {
+    background-color: #1a4a7a;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(15, 43, 70, 0.2);
+}
+
+/* =========================================
+   4. СЕКЦИИ КОНТЕНТА (МОБИЛКА)
+   ========================================= */
+.section-content {
+    padding: 30px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.section-content h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0f2b46;
+    margin-bottom: 16px;
+}
+
+.section-content p {
+    text-align: center;
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+.container-for-cards {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    border-radius: 0 0 15px 15px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-    padding-top: 10px;
-}
-
-.head-line a{
-    
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-    touch-action: manipulation;
-    user-select: none;
-}
-.head-line a:active{
-    transform: scale(0.95);
-}
-
-.head-fon .icon{
-    width: 28px;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-    touch-action: manipulation;
-    user-select: none;
-    margin: 0 25px 10px 0px;
-}
-.head-fon .icon:active{
-    transform: scale(0.95);
-}
-
-.call-container{
-    margin: 10px 25px 10px 0;
-}
-.call{
-    color: #042b5e;
-    text-align: right;
-    font-size: 12px;
-}
-
-.zag-container{
-    margin: 0 0 0 25px;
-}
-.span-zagolovok{
-    font-size: 20px;
-}
-.zagolovok{
-    color: #06336d;
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);*/
-    line-height: 30px;
-}
-
-.mission-container{
+    align-items: center;
+    gap: 20px;
+    padding: 20px; 
     background-color: white;
-    padding: 10px 0 10px 10px;
-    border-radius: 10px;
-    max-width: 35%;
-    height: auto;
-    margin: 25px 0 0 25px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-}
-.mission{
-    color: #042b5e;
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+             
 }
 
+.card-left,
+.card-right {
+    width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+    margin: 0 10px;
+    
+    
+}
+
+/* =========================================
+   5. ПОДВАЛ (МОБИЛКА)
+   ========================================= */
+.footer {
+    background-color: rgba(15, 43, 70, 0.9);
+    color: #ffffff;
+    padding: 32px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer p {
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+/* =========================================
+   6. ПЛАНШЕТ (от 768px)
+   ========================================= */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 24px;
+    }
+
+    .hero {
+        padding: 100px 0 80px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+    }
+
+    .btn-primary {
+        width: auto;
+    }
+
+    .section-content {
+        padding: 80px 0;
+    }
+
+    .section-content h2 {
+        font-size: 2rem;
+    }
+
+    body::before {
+        width: 550px;
+        height: 550px;
+        top: -180px;
+        right: -150px;
+    }
+
+    body::after {
+        width: 480px;
+        height: 480px;
+        bottom: -150px;
+        left: -120px;
+    }
+}
+
+/* =========================================
+   7. ДЕСКТОП (от 1024px)
+   ========================================= */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 32px;
+    }
+
+    .hero {
+        padding: 120px 0 100px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin: 0 auto 32px;
+    }
+
+    .btn-primary {
+        padding: 16px 32px;
+        font-size: 1.125rem;
+    }
+
+    .section-content {
+        padding: 100px 0;
+    }
+
+    .section-content h2 {
+        font-size: 2.5rem;
+    }
+
+    body::before {
+        width: 800px;
+        height: 800px;
+        top: -250px;
+        right: -200px;
+    }
+
+    body::after {
+        width: 650px;
+        height: 650px;
+        bottom: -200px;
+        left: -150px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+}
+
+/* =========================================
+   8. БОЛЬШОЙ ДЕСКТОП (от 1440px)
+   ========================================= */
+@media (min-width: 1440px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+}
