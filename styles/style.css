@@ -89,7 +89,7 @@ body::after {
     padding: 14px 28px;
     border: none;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 15px;
     cursor: pointer;
     width: 100%;
     max-width: 320px;
@@ -113,7 +113,7 @@ body::after {
 
 .section-content h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #0f2b46;
     margin-bottom: 16px;
 }
@@ -150,6 +150,7 @@ body::after {
     padding: 8px;
     list-style: none;
     border-radius: 20px;
+    color: #4a5568;
 }
 .container span{
     font-weight: bold;
