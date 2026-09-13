@@ -11,14 +11,20 @@ body {
     color: #1a202c;
     line-height: 1.6;
     font-size: 16px;
+    margin: 5px;
+    
+    
 
     /* База: мягкий градиент */
 
+}
+.fon{
     background: linear-gradient(180deg, #e8f4f8 0%, #84bbd4 100%);
     background-attachment: fixed;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    
 }
 
 
@@ -51,7 +57,23 @@ body::after {
     background: radial-gradient(circle, rgba(66, 165, 245, 0.2) 0%, transparent 70%);
 }
 
+.head-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.number{
+    font-size: 12px;
+    color: #4a5568;
+    text-align: right;
+}
 
+.logotip{
+    width: 50px;
+    height: auto;
+}
 
 
 /*КОНТЕЙНЕР (МОБИЛКА)*/
@@ -64,6 +86,10 @@ body::after {
     z-index: 1;
 }
 
+.vibor{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
@@ -71,7 +97,12 @@ body::after {
 
 .hero {
     text-align: center;
-    padding: 20px 0 60px;
+    padding: 20px 0 0 0;
+}
+.hero-logo{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
 }
 
 
@@ -81,6 +112,10 @@ body::after {
     color: #0f2b46;
     margin-bottom: 16px;
     line-height: 1.2;
+    background: linear-gradient(to right, #2f5b85, #082b4b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .hero p {
@@ -91,7 +126,7 @@ body::after {
 
 .bnt-messange {
     display: inline-block;
-    background-color: #0f2b46;
+    background: linear-gradient(to right, #2f5b85, #082b4b);
     color: #ffffff;
     font-weight: 600;
     padding: 14px 28px;
@@ -141,25 +176,25 @@ body::after {
     gap: 20px;
     padding: 20px; 
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 10px;          
 }
 
 .card-left,
 .card-right {
-    width: 100px;
+    width: 120px;
     height: auto;
     display: block;
-    border-radius: 20px;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
-    margin: 0 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgba(0,0,0,1.5);
+   
 }
 
 .container ul{
     background-color: white;
     padding: 8px;
     list-style: none;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #4a5568;
 }
 .container span{
