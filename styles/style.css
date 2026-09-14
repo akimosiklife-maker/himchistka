@@ -63,6 +63,63 @@ body::after {
     background: radial-gradient(circle, rgba(66, 165, 245, 0.2) 0%, transparent 70%);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.call-btn {
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.phone-block img{
+     max-width: 38px;
+    height: auto;
+    margin-top: 8px;
+}
+
+@keyframes ring {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(-15deg); }
+    30% { transform: rotate(10deg); }
+    40% { transform: rotate(-10deg); }
+    50% { transform: rotate(5deg); }
+    60% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+}
+
+.call-btn {
+    display: inline-block;
+    animation: ring 1.5s infinite;
+    transform-origin: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .head-info{
     display: flex;
     align-items: center;
@@ -117,11 +174,12 @@ body::after {
     position: absolute;
     z-index: 0;
     pointer-events: none;
-    top: 1%;                  /* 5% от высоты родителя */
-    right: -30%;                 /* прижат к правому краю */
-    width: 70%;               /* 40% от ширины родителя */
+    top: 85%;                  /* 5% от высоты родителя */
+    right: -20%;                 /* прижат к правому краю */
+    width: 40%;               /* 40% от ширины родителя */
     height: auto;
-    opacity: 0.5;
+    opacity: 0.9;
+    
 }
 
 
