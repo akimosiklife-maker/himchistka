@@ -105,14 +105,15 @@ body::after {
     text-align: center;
     padding: 20px 0 0 0;
 }
-.rastenie {
+.bubbles {
     position: absolute;
     z-index: 0;
     pointer-events: none;
-    top: 9%;                  /* 5% от высоты родителя */
-    right: -6%;                 /* прижат к правому краю */
-    width: 30%;               /* 40% от ширины родителя */
+    top: 1%;                  /* 5% от высоты родителя */
+    right: -30%;                 /* прижат к правому краю */
+    width: 70%;               /* 40% от ширины родителя */
     height: auto;
+    opacity: 0.5;
 }
 
 
@@ -130,9 +131,9 @@ body::after {
     position: absolute;
     z-index: 0;
     pointer-events: none;
-    top: 60%;                 /* 60% от высоты родителя */
+    top: 57%;                 /* 60% от высоты родителя */
     left: -10%;               /* уходит за левый край на 10% */
-    width: 55%;               /* 35% от ширины родителя */
+    width: 40%;               /* 35% от ширины родителя */
     height: auto;
     transform: scaleX(-1);
 }
