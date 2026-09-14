@@ -100,22 +100,50 @@ body::after {
 /*HERO СЕКЦИЯ (МОБИЛКА)*/
 
 .hero {
+    position: relative;
+    
     text-align: center;
     padding: 20px 0 0 0;
 }
-.rastenie{
+.rastenie {
     position: absolute;
     z-index: 0;
     pointer-events: none;
-    margin-top: 17px;
-    width: 250px;
+    top: 9%;                  /* 5% от высоты родителя */
+    right: -6%;                 /* прижат к правому краю */
+    width: 30%;               /* 40% от ширины родителя */
     height: auto;
 }
+
+
+.hero h1,
+.hero p,
+.hero a,
+.bnt-messange,
+.hero-logo {
+    position: relative;
+    z-index: 1;
+}
+
+
+.rastenie-two {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    top: 60%;                 /* 60% от высоты родителя */
+    left: -10%;               /* уходит за левый край на 10% */
+    width: 55%;               /* 35% от ширины родителя */
+    height: auto;
+    transform: scaleX(-1);
+}
+
 
 .hero-logo{
     width: 300px;
     height: auto;
     margin-top: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -192,11 +220,13 @@ body::after {
     padding: 20px; 
     background-color: white;
     border-radius: 10px;
-    margin-bottom: 10px;          
+    margin-bottom: 10px; 
+          
 }
 
 .card-left,
 .card-right {
+
     width: 120px;
     height: auto;
     display: block;
