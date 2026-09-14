@@ -1,4 +1,4 @@
-/*СБРОС И БАЗА (MOBILE-FIRST ПО УМОЛЧАНИЮ)*/
+            /*СБРОС И БАЗА (MOBILE-FIRST ПО УМОЛЧАНИЮ)*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
 
 
 
-    /* БАЗА ДЛЯ МЯГКОГО ГРАДИЕНТА НА ФОН */
+            /* БАЗА ДЛЯ МЯГКОГО ГРАДИЕНТА НА ФОН */
 
 .fon{
     background: linear-gradient(180deg, #e8f4f8 0%, #84bbd4 100%);
@@ -36,7 +36,7 @@ body {
 
 
 
-/* ДВА ДЕКОРАТИВНЫХ ПЯТНА ЧЕРЕЗ ПСЕВДОЭЛЕМЕНТЫ */
+            /* ДВА ДЕКОРАТИВНЫХ ПЯТНА ЧЕРЕЗ ПСЕВДОЭЛЕМЕНТЫ */
 
 body::before,
 body::after {
@@ -67,12 +67,28 @@ body::after {
 
 
 
+            /*САМЫЙ ВЕРХНИЙ БЛОК С ЛОГОТИПОМ И НОМЕРОМ*/
 
+.head-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 5px 0;
+    padding: 0 10px;
+    background: linear-gradient(to right, #84bbd4, #fefefe);
+    border-radius: 20px;
+}
 
+.number{
+    font-size: 12px;
+    color: #4a5568;
+    text-align: right;
+}
 
-
-
-
+.logotip{
+    width: 50px;
+    height: auto;
+}
 
 .call-btn {
     display: inline-block;
@@ -108,44 +124,7 @@ body::after {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.head-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 0 5px 0;
-    padding: 0 10px;
-    background: linear-gradient(to right, #84bbd4, #fefefe);
-    border-radius: 20px;
-}
-
-.number{
-    font-size: 12px;
-    color: #4a5568;
-    text-align: right;
-}
-
-.logotip{
-    width: 50px;
-    height: auto;
-}
-
-
-
-
-
-/*КОНТЕЙНЕР*/
+            /*КОНТЕЙНЕР*/
 
 .container {
     width: 100%;
@@ -162,7 +141,9 @@ body::after {
 
 
 
-/*HERO СЕКЦИЯ*/
+
+
+            /*БЛОК ЗАГОЛОВОК И ВИЗУАЛЬНОЙ НАЧИНКОЙ*/
 
 .hero {
     position: relative;
@@ -179,9 +160,7 @@ body::after {
     width: 40%;               /* 40% от ширины родителя */
     height: auto;
     opacity: 0.9;
-    
 }
-
 
 .hero h1,
 .hero p,
@@ -191,7 +170,6 @@ body::after {
     position: relative;
     z-index: 1;
 }
-
 
 .rastenie-two {
     position: absolute;
@@ -203,7 +181,6 @@ body::after {
     height: auto;
     transform: scaleX(-1);
 }
-
 
 .hero-logo{
     width: 300px;
@@ -251,6 +228,7 @@ body::after {
     transform: translateY(-1px);
     box-shadow: 0 10px 20px rgba(15, 43, 70, 0.2);
 }
+
 .bnt-messange:active {
     transform: scale(0.99);  
 }
@@ -258,7 +236,8 @@ body::after {
 
 
 
-/*СЕКЦИИ КОНТЕНТА (МОБИЛКА)*/
+
+            /*ВЫБОР РАЗДЕЛА УСЛУГИ*/
 
 .section-content {
     padding: 30px 0;
@@ -287,13 +266,11 @@ body::after {
     padding: 20px; 
     background-color: white;
     border-radius: 10px;
-    margin-bottom: 10px; 
-          
+    margin-bottom: 10px;
 }
 
 .card-left,
 .card-right {
-
     width: 120px;
     height: auto;
     display: block;
@@ -311,6 +288,11 @@ body::after {
     transform: scale(0.95);
 }
 
+
+
+
+
+            /*ИНФОРМАЦИОННЫЙ БЛОК НАШИХ ПРИЕМУЩЕСТВ*/
 
 .blocks-opis{
     background-color: white;
@@ -339,8 +321,7 @@ body::after {
 
 .background-him{
     background-image: url(../images/chemspec.png);  
-    background-position: 190px center;
-    
+    background-position: 190px center; 
 }
 
 .background-oplata{
@@ -368,14 +349,7 @@ body::after {
 
 
 
-
-
-
-
-
-
-
-/*ВЕРНУТЬСЯ ДОРАБОТАТЬ ИСТОРИЮ С ОФОРМЛЕНИЕМ КАРУСЕЛИ*/
+            /*ГАЛЕРЕЯ С ФОТОГРАФИЯМИ ДО-ПОСЛЕ - ДОРАБОТАТЬ!*/
 
 .carousel {
     position: relative;
@@ -384,8 +358,6 @@ body::after {
     max-width: 400px;
     margin: 0 auto;
     border-radius: 50px;
-    
-    /*ВЕРНУТЬСЯ ДОРАБОТАТЬ ИСТОРИЮ С ОФОРМЛЕНИЕМ КАРУСЕЛИ*/
 }
 
 .carousel-track {
@@ -393,7 +365,6 @@ body::after {
     transition: transform 0.3s ease;
     will-change: transform;
 }
-/*ВЕРНУТЬСЯ ДОРАБОТАТЬ ИСТОРИЮ С ОФОРМЛЕНИЕМ КАРУСЕЛИ*/
 
 .carousel-track img {
     width: 100%;
@@ -421,8 +392,7 @@ body::after {
     border-radius: 50%;
     cursor: pointer;
     z-index: 2;
-    opacity: 0.65;
-    
+    opacity: 0.65; 
 }
 
 .carousel-btn:active {
@@ -445,20 +415,13 @@ body::after {
 
 
 
+            /*РАЗДЕЛ ПРАЙСА НА ХИМЧИСТКУ*/
 
 
 
 
 
-
-
-
-
-
-
-
-
-/*ПОДВАЛ (МОБИЛКА)*/
+            /*ПОДВАЛ С ДОКУМЕНТАМИ В СООТВЕТСТВИИ С ЗАКОНОДАТЕЛЬСТВОМ РФ*/
 
 .footer {
     background-color: rgba(15, 43, 70, 0.9);
@@ -477,7 +440,7 @@ body::after {
 
 
 
-/*ПЛАНШЕТ (от 768px)*/
+            /*АДАПТАЦИЯ - ПЛАНШЕТ (от 768px)*/
 
 @media (min-width: 768px) {
     .container {
@@ -527,7 +490,7 @@ body::after {
 
 
 
-/*ДЕСКТОП (от 1024px)*/
+            /*АДАПТАЦИЯ - ДЕСКТОП (от 1024px)*/
 
 @media (min-width: 1024px) {
     .container {
@@ -584,7 +547,7 @@ body::after {
 
 
 
-/*БОЛЬШОЙ ДЕСКТОП (от 1440px)*/
+            /*АДАПТАЦИЯ - БОЛЬШОЙ ДЕСКТОП (от 1440px)*/
 
 @media (min-width: 1440px) {
     .hero h1 {
