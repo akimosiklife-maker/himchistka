@@ -1,4 +1,4 @@
-/*СБРОС И БАЗА (МОБИЛКА ПО УМОЛЧАНИЮ)*/
+/*СБРОС И БАЗА (MOBILE-FIRST ПО УМОЛЧАНИЮ)*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -15,26 +15,28 @@ body {
     line-height: 1.6;
     font-size: 16px;
     margin: 5px;
-    
-    
-
-    /* База: мягкий градиент */
-
 }
+    
+    
+
+
+
+    /* БАЗА ДЛЯ МЯГКОГО ГРАДИЕНТА НА ФОН */
+
 .fon{
     background: linear-gradient(180deg, #e8f4f8 0%, #84bbd4 100%);
     background-attachment: fixed;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
-    
-    
+    border-radius: 20px;
 }
 
 
 
 
-/* Два декоративных пятна через псевдоэлементы */
+
+/* ДВА ДЕКОРАТИВНЫХ ПЯТНА ЧЕРЕЗ ПСЕВДОЭЛЕМЕНТЫ */
 
 body::before,
 body::after {
@@ -65,9 +67,12 @@ body::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 5px 0;
+    padding: 0 10px;
+    background: linear-gradient(to right, #84bbd4, #fefefe);
+    border-radius: 20px;
 }
+
 .number{
     font-size: 12px;
     color: #4a5568;
@@ -80,7 +85,10 @@ body::after {
 }
 
 
-/*КОНТЕЙНЕР (МОБИЛКА)*/
+
+
+
+/*КОНТЕЙНЕР*/
 
 .container {
     width: 100%;
@@ -97,14 +105,14 @@ body::after {
 
 
 
-/*HERO СЕКЦИЯ (МОБИЛКА)*/
+/*HERO СЕКЦИЯ*/
 
 .hero {
     position: relative;
-    
     text-align: center;
     padding: 20px 0 0 0;
 }
+
 .bubbles {
     position: absolute;
     z-index: 0;
@@ -287,15 +295,8 @@ body::after {
 }
 
 .background-garant{
-    background-image: url(../images/garant.webp);
-    
+    background-image: url(../images/garant.webp);   
 }
-
-
-
-
-
-
 
 .blocks-opis p{
     text-align: left;
@@ -304,6 +305,79 @@ body::after {
 .container span{
     font-weight: bold;
 }
+
+
+
+
+
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.carousel-track img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 12px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-1px);
+    color: #fff;
+    border: none;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.65;
+    
+}
+
+.carousel-btn:active {
+    transform: scale(0.99);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.commit-carousel{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
 
 
 
