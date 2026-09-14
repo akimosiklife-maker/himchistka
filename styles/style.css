@@ -312,16 +312,22 @@ body::after {
 
 
 
+
+
+
+
+
+/*ВЕРНУТЬСЯ ДОРАБОТАТЬ ИСТОРИЮ С ОФОРМЛЕНИЕМ КАРУСЕЛИ*/
+
 .carousel {
     position: relative;
     overflow: hidden;
     width: 100%;
     max-width: 400px;
-    max-height: 400px;
-    height: 100%;
     margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    
+    /*ВЕРНУТЬСЯ ДОРАБОТАТЬ ИСТОРИЮ С ОФОРМЛЕНИЕМ КАРУСЕЛИ*/
 }
 
 .carousel-track {
@@ -329,15 +335,20 @@ body::after {
     transition: transform 0.3s ease;
     will-change: transform;
 }
+/*ВЕРНУТЬСЯ ДОРАБОТАТЬ ИСТОРИЮ С ОФОРМЛЕНИЕМ КАРУСЕЛИ*/
 
 .carousel-track img {
     width: 100%;
+    height: auto;
     flex-shrink: 0;
     object-fit: cover;
     display: block;
     user-select: none;
     -webkit-user-drag: none;
-    border-radius: 12px;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    padding: 10px;
 }
 
 .carousel-btn {
@@ -371,6 +382,13 @@ body::after {
 .commit-carousel{
     margin-top: 10px;
 }
+
+
+
+
+
+
+
 
 
 
