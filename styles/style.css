@@ -4,6 +4,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 body {
@@ -24,6 +27,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    
     
 }
 
@@ -99,12 +103,20 @@ body::after {
     text-align: center;
     padding: 20px 0 0 0;
 }
+.rastenie{
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    margin-top: 17px;
+    width: 250px;
+    height: auto;
+}
+
 .hero-logo{
     width: 300px;
     height: auto;
     margin-top: 20px;
 }
-
 
 .hero h1 {
     font-size: 1.75rem;
@@ -136,13 +148,16 @@ body::after {
     cursor: pointer;
     width: 100%;
     max-width: 320px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 .bnt-messange:hover {
     background-color: #1a4a7a;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0 10px 20px rgba(15, 43, 70, 0.2);
+}
+.bnt-messange:active {
+    transform: scale(0.99);  
 }
 
 
@@ -186,9 +201,19 @@ body::after {
     height: auto;
     display: block;
     border-radius: 100%;
-    box-shadow: 0 0 8px rgba(0,0,0,1.5);
-   
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1.5);
+    transition: transform 0.1s ease;
+    cursor: pointer;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
+.card-left:active,
+.card-right:active {
+    transform: scale(0.95);
+}
+
 
 .blocks-opis{
     background-color: white;
