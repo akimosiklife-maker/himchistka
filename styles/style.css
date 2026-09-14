@@ -190,12 +190,60 @@ body::after {
    
 }
 
-.container ul{
+.blocks-opis{
     background-color: white;
     padding: 8px;
+    margin-bottom: 15px;
     list-style: none;
     border-radius: 10px;
     color: #4a5568;
+    height: 180px;
+}
+
+.background-sabrina,
+.background-him,
+.background-oplata,
+.background-speed,
+.background-garant{
+    background-position: right center;
+    background-position: 180px center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.background-sabrina{
+    background-image: url(../images/sabrina.webp);  
+}
+
+.background-him{
+    background-image: url(../images/chemspec.png);  
+    background-position: 190px center;
+    
+}
+
+.background-oplata{
+    background-image: url(../images/oplata.webp);
+    background-position: 130px center;
+}
+
+.background-speed{
+    background-image: url(../images/speed.png);
+}
+
+.background-garant{
+    background-image: url(../images/garant.webp);
+    
+}
+
+
+
+
+
+
+
+.blocks-opis p{
+    text-align: left;
+    width: 200px;
 }
 .container span{
     font-weight: bold;
