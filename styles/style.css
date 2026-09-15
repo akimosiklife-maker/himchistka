@@ -7,6 +7,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     color: #1a202c;
@@ -19,6 +23,43 @@ body img{
     user-select: none;
     -webkit-user-select: none;
 }  
+
+
+
+
+
+            /*ВОЗВРАЩЕНИЕ К НАЧАЛУ СТРАНИЦЫ*/
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    background: rgba(15, 43, 70, 0.6);
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 100;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: rgba(15, 43, 70, 0.9);
+}
+
+
 
 
 
@@ -248,7 +289,7 @@ body::after {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 20px; 
+    padding: 10px; 
     background-color: white;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -256,7 +297,7 @@ body::after {
 
 .card-left,
 .card-right {
-    width: 120px;
+    width: 140px;
     height: auto;
     display: block;
     border-radius: 100%;
@@ -266,6 +307,14 @@ body::after {
     touch-action: manipulation;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+.card-left{
+    margin-left: 10px;
+}
+
+.card-right{
+    margin-right: 10px;
 }
 
 .card-left:active,
@@ -301,7 +350,8 @@ body::after {
 }
 
 .background-sabrina{
-    background-image: url(../images/sabrina.webp);  
+    background-image: url(../images/sabrina.webp); 
+    background-position: 200px center;
 }
 
 .background-him{
@@ -311,7 +361,7 @@ body::after {
 
 .background-oplata{
     background-image: url(../images/oplata.webp);
-    background-position: 130px center;
+    background-position: 150px center;
 }
 
 .background-speed{
@@ -319,7 +369,8 @@ body::after {
 }
 
 .background-garant{
-    background-image: url(../images/garant.webp);   
+    background-image: url(../images/garant.webp);
+    background-position: 200px center;   
 }
 
 .blocks-opis p{
@@ -342,7 +393,8 @@ body::after {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 10px;
+    
 }
 
 .carousel-track {
@@ -359,10 +411,10 @@ body::after {
     display: block;
     user-select: none;
     -webkit-user-drag: none;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    padding: 10px;
+    
+    
 }
 
 .carousel-btn {
@@ -374,10 +426,9 @@ body::after {
     font-size: 28px;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     cursor: pointer;
     z-index: 2;
-    opacity: 0.65; 
+    background: none
 }
 
 .carousel-btn:active {

@@ -59,7 +59,7 @@
                 </div>
                 
             <div class="container-for-cards">
-                    <a class="left" href="#!">
+                    <a class="left" href="#him">
                         <img class="card-left" src="images/him.png" alt="химчистка"></a>
                     
                     <a class="right" href="#!">
@@ -124,7 +124,7 @@
             <div class="container">
                 <h2>ФОТО ВЫПОЛНЕНЫХ РАБОТ</h2>
 
-                <div class="carousel">
+                <div id="him" class="carousel">
                     <div class="carousel-track">
                         <img src="images/do-posle-him/img1.jpg" alt="">
                         <img src="images/do-posle-him/img2.jpg" alt="">
@@ -133,13 +133,9 @@
                         <img src="images/do-posle-him/img5.jpg" alt="">
                     </div>
 
-                    <button> 
-                    <img class="carousel-btn prev" src="images/btn-left.png" alt="">
-                    </button>
-            
-                    <button>
-                        <img class="carousel-btn next" src="images/btn-right.png" alt="">
-                    </button>
+                    <button class="carousel-btn prev">&lt;</button> 
+                    <button class="carousel-btn next">&gt;</button>
+    
                 </div>
 
                 <p class="commit-carousel">В данном портфолио расположены наши работы по химчистке мягкой мебели, 
@@ -173,9 +169,25 @@
 
 
 
+        <!--ВОЗВРАЩЕНИЕ К НАЧАЛУ СТРАНИЦЫ-->
+
+        <a href="#" class="scroll-top" id="scrollTop">↑</a>
+
+    <script>
+        const scrollBtn = document.querySelector('.scroll-top');
+
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            scrollBtn.classList.add('visible');
+        } else {
+            scrollBtn.classList.remove('visible');
+        }
+        });
+    </script>
 
 
-     <!--СКРИПТ ДЛЯ ГАЛЕРЕИ ФОТО ДО-ПОСЛЕ-->
+
+        <!--СКРИПТ ДЛЯ ГАЛЕРЕИ ФОТО ДО-ПОСЛЕ-->
 
     <script>
         const track = document.querySelector('.carousel-track');
