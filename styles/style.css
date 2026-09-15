@@ -5,8 +5,6 @@
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 body {
@@ -17,7 +15,10 @@ body {
     margin: 5px;
 }
     
-    
+body img{
+    user-select: none;
+    -webkit-user-select: none;
+}  
 
 
 
@@ -82,12 +83,13 @@ body::after {
 .number{
     font-size: 12px;
     color: #4a5568;
-    text-align: right;
+    text-align: right; 
 }
 
 .logotip{
     width: 50px;
     height: auto;
+    margin-top: 7px;
 }
 
 .call-btn {
@@ -97,10 +99,16 @@ body::after {
     touch-action: manipulation;
 }
 
-.phone-block img{
-     max-width: 38px;
-    height: auto;
-    margin-top: 8px;
+.phone-block{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    gap: 10px;
+}
+
+.phone{
+    max-width: 38px;
+    height: auto; 
 }
 
 @keyframes ring {
@@ -151,17 +159,6 @@ body::after {
     padding: 20px 0 0 0;
 }
 
-.bubbles {
-    position: absolute;
-    z-index: 0;
-    pointer-events: none;
-    top: 85%;                  /* 5% от высоты родителя */
-    right: -20%;                 /* прижат к правому краю */
-    width: 40%;               /* 40% от ширины родителя */
-    height: auto;
-    opacity: 0.9;
-}
-
 .hero h1,
 .hero p,
 .hero a,
@@ -171,23 +168,11 @@ body::after {
     z-index: 1;
 }
 
-.rastenie-two {
-    position: absolute;
-    z-index: 0;
-    pointer-events: none;
-    top: 57%;                 /* 60% от высоты родителя */
-    left: -10%;               /* уходит за левый край на 10% */
-    width: 40%;               /* 35% от ширины родителя */
-    height: auto;
-    transform: scaleX(-1);
-}
-
 .hero-logo{
-    width: 300px;
+    width: 400px;
     height: auto;
     margin-top: 20px;
-    position: relative;
-    z-index: 1;
+    right: 15px; 
 }
 
 .hero h1 {
@@ -210,7 +195,7 @@ body::after {
 
 .bnt-messange {
     display: inline-block;
-    background: linear-gradient(to right, #2f5b85, #082b4b);
+    background: linear-gradient(to right, #4078ac, #0f518e);
     color: #ffffff;
     font-weight: 600;
     padding: 14px 28px;
