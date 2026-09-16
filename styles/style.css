@@ -381,7 +381,7 @@ body::after {
 
 
 
-            /*ГАЛЕРЕЯ С ФОТОГРАФИЯМИ ДО-ПОСЛЕ - ДОРАБОТАТЬ!*/
+            /*ГАЛЕРЕЯ С ФОТОГРАФИЯМИ ДО-ПОСЛЕ*/
 
 .carousel {
     position: relative;
@@ -389,8 +389,7 @@ body::after {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 
 .carousel-track {
@@ -449,7 +448,42 @@ body::after {
 
             /*РАЗДЕЛ ПРАЙСА НА ХИМЧИСТКУ*/
 
+.price-zagolovok{
+    padding-top: 60px;
+}
 
+.opis-price{
+    background-color: white;
+    
+    margin-bottom: 15px;
+    list-style: none;
+    border-radius: 10px;
+    color: #4a5568;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+}
+
+.opis-price p{
+    text-align: left;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    margin: 8px;
+}
+
+.opis-price img{
+    position: absolute;
+    right: -30%;
+    top: -20%;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+}
 
 
 
