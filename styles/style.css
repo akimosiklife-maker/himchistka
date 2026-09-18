@@ -211,10 +211,10 @@ body::after {
 }
 
 .hero-logo{
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: auto;
     margin-top: 20px;
-    right: 15px; 
 }
 
 .hero h1 {
@@ -331,7 +331,8 @@ body::after {
     list-style: none;
     border-radius: 10px;
     color: #4a5568;
-    height: 180px;
+    min-height: 180px;
+    height: auto;
 }
 
 .background-sabrina,
@@ -371,7 +372,7 @@ body::after {
 
 .blocks-opis p{
     text-align: left;
-    width: 200px;
+    max-width: 200px;
 }
 .container span{
     font-weight: bold;
@@ -459,14 +460,15 @@ body::after {
     list-style: none;
     border-radius: 10px;
     color: #4a5568;
-    height: 140px;
+    min-height: 140px;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
 
 .opis-price p{
     text-align: left;
-    width: 200px;
+    max-width: 200px;
     position: absolute;
     z-index: 1;
     margin: 8px;
