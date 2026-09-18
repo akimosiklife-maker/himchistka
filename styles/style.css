@@ -485,16 +485,100 @@ body::after {
     mask-image: linear-gradient(to right, transparent 0%, black 30%);
 }
 
+.na-vibor{
+    font-size: 1rem;
+    color: #4a5568;
+    padding: 0 16px ;
+}
 
 
 
-            /*РАЗДЕЛ ЧИСТКА КОНДИЦИОНЕРОВ*/            
+
+
+            /*КНОПКА НАПИСАТЬ ИЛИ ПОЗВОНИТЬ*/
+
+.phone2, .phone2-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+
+
+            /*РАЗДЕЛ ЧТО ВХОДИТ В СТОИМОСТЬ*/
+
+.zagolovok-cena{
+    padding-top: 60px;
+}
+
+.zagolovok-spiska{
+    text-align: center;
+    color: #082b4b;
+    padding-bottom: 10px;
+}
+
+.spisok-block1{
+    background-color: white;
+    border-radius: 10px;
+    color: #4a5568;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.spisok1 ul{
+    text-align: left;
+    margin-left: 20px;
+}
 
 
 
 
 
             /*РАЗДЕЛ ОТЗЫВЫ*/
+
+.otziv-zagolovok{
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 16px;
+}
+
+.opis-otziv{
+    display: block;
+    background-color: white;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.opis-otziv img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto; 
+}
+
+.otziv-opis{
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+            /*РАЗДЕЛ ЧИСТКА КОНДИЦИОНЕРОВ*/            
 
 
 
