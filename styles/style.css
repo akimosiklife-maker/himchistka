@@ -279,7 +279,7 @@ body::after {
     margin-bottom: 16px;
 }
 
-.section-content p {
+.section-content div{
     text-align: center;
     font-size: 1rem;
     color: #4a5568;
@@ -317,6 +317,7 @@ body::after {
 .card-right:active {
     transform: scale(0.95);
 }
+
 
 
 
@@ -491,8 +492,8 @@ body::after {
     font-size: 1rem;
     color: #4a5568;
     padding: 0 16px ;
+    text-align: center;
 }
-
 
 
 
@@ -516,12 +517,6 @@ body::after {
     padding-top: 60px;
 }
 
-.zagolovok-spiska{
-    text-align: center;
-    color: #082b4b;
-    padding-bottom: 10px;
-}
-
 .spisok-block1{
     background-color: white;
     border-radius: 10px;
@@ -533,6 +528,10 @@ body::after {
 .spisok1 ul{
     text-align: left;
     margin-left: 20px;
+}
+
+.zagolovok-spiska{
+    padding-top: 30px;
 }
 
 
@@ -575,13 +574,54 @@ body::after {
 
 
 
+            /*РАЗДЕЛ ЧИСТКА КОНДИЦИОНЕРОВ*/ 
+            
+.container-split{
+    width: 100%;
+    padding: 16px 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
 
+.split-priziv{
+    padding-bottom: 16px;
+}
 
+.opis-split {
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: #4a5568;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* центрирует фото и текст по горизонтали */
+    gap: 12px;             /* отступ между фото и текстом */
+}
 
+.opis-split img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;  
+    -webkit-mask-image: 
+        linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+        linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: 
+        linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+        linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-composite: intersect;      /* на всякий случай — центрирование */
+}
 
-
-            /*РАЗДЕЛ ЧИСТКА КОНДИЦИОНЕРОВ*/            
-
+.opis-split p {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
 
 
 
