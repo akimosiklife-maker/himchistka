@@ -122,15 +122,17 @@ body::after {
 .header-logo {
     width: 50px;
     height: auto;
-    margin-top: 7px;
 }
 
 .phone-block {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7px;
     gap: 10px;
+}
+
+.phone-block img{
+    margin-top: 7px;
 }
 
 .number {
@@ -440,6 +442,10 @@ body::after {
 
 .commit-carousel {
     margin-top: 10px;
+}
+
+#do-posle-split{
+    padding: 0;
 }
 
 
