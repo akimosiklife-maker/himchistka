@@ -690,16 +690,16 @@ body::after {
     align-items: center;
     gap: 24px;
     background: white;
-    padding: 8px;
+    padding: 16px;
     border-radius: 10px;
     margin-top: 16px;
 }
 
 
 
-.master-text p {
+.master-text {
     margin-bottom: 10px;
-    text-align: center;
+    text-align: justify;
 }
 
 @media (max-width: 768px) {
