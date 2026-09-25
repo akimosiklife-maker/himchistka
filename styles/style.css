@@ -970,8 +970,39 @@ footer {
         padding: 0 24px;
     }
 
+    .container p{
+        font-size: 1.5rem;
+    }
+
+    .review-card p{
+        padding-left: 27px;
+    }
+
+    .head-info{
+        height: 60px;
+    }
+
+    .header-logo {
+        width: 70px;
+        height: auto;
+    }
+
+   .phone{
+    max-width: 50px;
+    width: 100%;
+   }
+
+    .number{
+        font-size: 15px;
+    }
+
+    .hero-bg{
+        max-width: 800px;
+        width: 100%;
+    }
+
     .hero {
-        padding: 100px 0 80px;
+        padding: 70px 0 50px;
     }
 
     .hero h1 {
@@ -979,19 +1010,23 @@ footer {
     }
 
     .hero p {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
     }
 
     .btn-order {
-        width: auto;
+        padding: 20px;
+    }
+    .hero button{
+        font-size: 20px;
     }
 
     .section-content {
-        padding: 80px 0;
+        padding: 0;
     }
 
     .section-content h2 {
-        font-size: 2rem;
+        font-size: 1.85rem;
+        margin-top: 60px
     }
 
     body::before {
@@ -1007,6 +1042,69 @@ footer {
         bottom: -150px;
         left: -120px;
     }
+
+   .section-content div {
+        font-size: 1.5rem;
+    }
+
+    .carousel{
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .card-img{
+        max-width: 260px;
+    }
+
+    #him, #split{
+        font-size: 1.6rem;
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .price-card{
+        min-height: 250px;
+        height: auto;
+    }
+
+    .price-card p{
+        padding: 8px 15px;
+        margin: 0;
+    }
+
+    .commit-carousel{
+        margin-top: 15px;
+    }
+
+    .na-vibor{
+        font-size: 1.5rem;
+        padding: 0 65px;
+    }
+    .phone-cta{
+        margin: 0;
+    }
+
+    .split-card img{
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .price-section-title, 
+    .list-title, 
+    .price-zagolovok,
+    .reviews-title,
+    .master-zagolovok{
+        padding: 0;
+    }
+    .phone-cta-text{
+        font-size: 1.5rem;
+    }
+
+    #oferta{
+        font-size: 1.3rem;
+        padding: 0 60px;
+    } 
+
 }
 
 
@@ -1035,6 +1133,9 @@ footer {
         font-size: 1.25rem;
         max-width: 600px;
         margin: 0 auto 32px;
+    }
+    .hero-bg{
+    
     }
 
     .btn-order {
