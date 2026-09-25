@@ -988,8 +988,8 @@ footer {
     }
 
    .phone{
-    max-width: 50px;
-    width: 100%;
+        max-width: 50px;
+        width: 100%;
    }
 
     .number{
@@ -1121,21 +1121,51 @@ footer {
         padding: 0 32px;
     }
 
+    .container p {
+        font-size: 1rem;
+    }
+
+    .container h2{
+        margin-top: 0;
+    }
+
+    .header-logo {
+        width: 50px;
+        height: auto;
+    }
+
+   .phone{
+        max-width: 40px;
+        width: 100%;
+   }
+
+    .number{
+        font-size: 13px;
+    }
+
     .hero {
-        padding: 120px 0 100px;
+        padding: 50px 0 0 0;
     }
 
     .hero h1 {
-        font-size: 3.5rem;
+        font-size:2.5rem;
     }
 
     .hero p {
-        font-size: 1.25rem;
+        font-size: 1rem;
         max-width: 600px;
         margin: 0 auto 32px;
     }
     .hero-bg{
-    
+        display: flex;
+        margin: 0 auto;
+       
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .hero button{
+        font-size: 15px;
     }
 
     .btn-order {
@@ -1144,12 +1174,71 @@ footer {
     }
 
     .section-content {
-        padding: 100px 0;
+        padding: 30px 0;
+    }
+
+    .section-content div{
+        font-size: 1rem;
+    }
+
+    .cards-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 90px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    
+    .cards-row-title{
+        margin-top: 15px;
+        max-width: 800px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .card-label{
+        font-size: 0.5rem;
+    }
+
+    .card-img{
+        max-width: 350px;
+        width: 100%;
     }
 
     .section-content h2 {
-        font-size: 2.5rem;
+        font-size: 1.3rem;
     }
+
+    #him,
+    #split{
+        max-width: 600px;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 0;
+    }
+
+    .opis-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .opis-card-him {
+    display: flex;             /* ← флекс ВНУТРИ карточки */
+    flex-direction: column;    /* ← текст сверху, картинка снизу */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 10px);   /* ← 2 в ряд с учётом gap */
+    max-width: 500px;          /* ← ограничение */
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+}
 
     body::before {
         width: 800px;
