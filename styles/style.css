@@ -1126,7 +1126,7 @@ footer {
     }
 
     .container h2{
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     .header-logo {
@@ -1144,7 +1144,7 @@ footer {
     }
 
     .hero {
-        padding: 50px 0 0 0;
+        padding: 35px 0 0 0;
     }
 
     .hero h1 {
@@ -1253,10 +1253,115 @@ footer {
         background: white;
         border-radius: 10px;
         padding: 16px;
-}
+    }
 
     .commit-carousel{
         margin-bottom: 30px;
+    }
+
+        /* По умолчанию — друг под другом (мобилка) */
+    .price-lists-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .price-list-col {
+        width: 100%;
+    }
+
+    /* С планшета и выше — в ряд */
+    @media (min-width: 768px) {
+        .price-lists-row {
+            flex-direction: row;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .price-list-col {
+            flex: 1;
+        }
+    }
+
+        /* Мобилка и планшет — 1 колонка */
+    .price-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Десктоп (1024px+) — 2 колонки */
+    @media (min-width: 1024px) {
+        .price-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+
+    .na-vibor{
+    font-size: 1rem !important;
+    margin-top: 15px;
+    }
+
+    .phone-cta-text{
+        font-size: 1rem;
+        color: #4a5568;
+    }
+
+    #oferta{
+        font-size: 0.8rem;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .btn-order{
+        margin-bottom: 15px;
+    }
+
+    /* Мобилка и планшет — 1 колонка */
+    .reviews-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Десктоп (1024px+) — 2 колонки */
+    @media (min-width: 1024px) {
+        .reviews-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+
+    /* Мобилка и планшет — 1 колонка */
+    .split-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Десктоп (1024px+) — 2 колонки */
+    @media (min-width: 1024px) {
+        .split-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+
+    /* Мобилка и планшет — 1 колонка */
+    .price-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Десктоп (1024px+) — 2 колонки */
+    @media (min-width: 1024px) {
+        .price-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
     }
 
     body::before {
@@ -1287,11 +1392,131 @@ footer {
    ========================================= */
 
 @media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+
     .hero h1 {
         font-size: 4rem;
     }
 
-    .container {
-        max-width: 1400px;
+    /* ===== ОПИСАНИЕ (ПОЧЕМУ МЫ) — 3 В РЯД ===== */
+    .opis-grid {
+        max-width: 1300px;
+        gap: 24px;
     }
+
+    .opis-card-him {
+        width: calc(33.333% - 16px);
+        max-width: 420px;
+    }
+
+    /* ===== ПРАЙС — 3 В РЯД ===== */
+    .price-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    .price-card img {
+    position: absolute;
+    right: -30%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 0;
+    -webkit-mask-image:
+        linear-gradient(to right, transparent 0%, black 30%),
+        linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+        linear-gradient(to right, transparent 0%, black 30%),
+        linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-composite: intersect;
+}
+
+    /* ===== ОТЗЫВЫ — 3 В РЯД ===== */
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    /* ===== ОБОРУДОВАНИЕ КОНДИЦИОНЕРОВ — 3 В РЯД ===== */
+    .split-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    /* ===== СПИСКИ «ЧТО ВХОДИТ / ИЗ ЧЕГО ЦЕНА» — 3 В РЯД ===== */
+    .price-lists-row {
+        gap: 32px;
+    }
+
+    /* ===== ШРИФТЫ ПРОПОРЦИОНАЛЬНО ДЕСКТОПУ ===== */
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        max-width: 700px;
+    }
+
+    .section-content h2 {
+        font-size: 1.6rem;
+    }
+
+    #him,
+    #split {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 1.05rem;
+    }
+
+    .na-vibor {
+        font-size: 1.1rem;
+    }
+
+    .phone-cta-text {
+        font-size: 1.1rem;
+    }
+
+    #oferta {
+        font-size: 0.9rem;
+        max-width: 900px;
+    }
+
+    .review-card p {
+        font-size: 17px;
+    }
+
+    .split-title,
+    .split-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .master-text p {
+        font-size: 1.05rem;
+    }
+
+   .carousel-track img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;        /* ← не выше 80% высоты экрана */
+    object-fit: contain;      /* ← вписываем без обрезки */
+    flex-shrink: 0;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    -webkit-user-drag: none;
+}
+
+    .card-img {
+        max-width: 400px;
+    }
+    
 }
