@@ -1168,9 +1168,23 @@ footer {
         font-size: 15px;
     }
 
-    .btn-order {
-        padding: 16px 32px;
-        font-size: 1.125rem;
+    .card-img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        display: block;
+        margin: 8px auto;
+        border-radius: 10%;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        border: 1px solid white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;  /* ← плавность */
+        cursor: pointer;
+        touch-action: manipulation;
+    }
+
+    .card-img:hover {
+        transform: translateY(-8px);  /* ← подъём */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);  /* ← тень */
     }
 
     .section-content {
@@ -1216,6 +1230,7 @@ footer {
         width: 100%;
         font-size: 1.3rem;
         padding: 0;
+        margin-bottom: 30px;
     }
 
     .opis-grid{
@@ -1228,17 +1243,21 @@ footer {
     }
 
     .opis-card-him {
-    display: flex;             /* ← флекс ВНУТРИ карточки */
-    flex-direction: column;    /* ← текст сверху, картинка снизу */
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    width: calc(50% - 10px);   /* ← 2 в ряд с учётом gap */
-    max-width: 500px;          /* ← ограничение */
-    background: white;
-    border-radius: 10px;
-    padding: 16px;
+        display: flex;             /* ← флекс ВНУТРИ карточки */
+        flex-direction: column;    /* ← текст сверху, картинка снизу */
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: calc(50% - 10px);   /* ← 2 в ряд с учётом gap */
+        max-width: 500px;          /* ← ограничение */
+        background: white;
+        border-radius: 10px;
+        padding: 16px;
 }
+
+    .commit-carousel{
+        margin-bottom: 30px;
+    }
 
     body::before {
         width: 800px;
