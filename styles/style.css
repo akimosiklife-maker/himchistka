@@ -625,6 +625,10 @@ body::after {
     margin-bottom: 16px;
 }
 
+#split{
+    margin-top: 30px;
+}
+
 .split-subtitle {
     padding-bottom: 16px;
     text-align: center;
@@ -1407,7 +1411,9 @@ footer {
         font-size: 17px !important;
     }
 
-    .split-title,
+    .split-title {
+        font-size: 1.6rem;
+    }
     .split-subtitle {
         font-size: 1.1rem !important;
     }
