@@ -17,9 +17,27 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/113092019" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-    
+                    <!-- SEO -->
+        <meta name="description" content="Химчистка мягкой мебели и кондиционеров в Керчи. Профессиональное оборудование, гипоаллергенная химия, гарантия. Выезд на дом. Звоните: +7 (978) 964-04-02">
+        <meta name="keywords" content="химчистка мебели Керчь, химчистка дивана Керчь, чистка кондиционеров Керчь, химчистка мягкой мебели, химчистка на дому">
+        <meta name="author" content="Сучилов Аким Андреевич">
+        <meta name="robots" content="index, follow">
 
-    <title>Химчистка мебели Керчь</title>
+        <!-- Open Graph (для ВК, Telegram, WhatsApp, Instagram Direct) -->
+        <meta property="og:title" content="Химчистка мягкой мебели и кондиционеров в Керчи">
+        <meta property="og:description" content="Профессиональная химчистка мебели и кондиционеров. Гарантия качества. Звоните: +7 (978) 964-04-02">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://akimosiklife-maker.github.io/himchistka/">
+        <meta property="og:image" content="https://akimosiklife-maker.github.io/himchistka/images/landing/osnova-fon.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:locale" content="ru_RU">
+
+        <!-- Фавикон -->
+        <link rel="icon" type="image/png" href="images/landing/logotip.png">
+        <link rel="apple-touch-icon" href="images/landing/logotip.png">
+
+    <title>Химчистка мебели и кондиционеров Керчь</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -404,8 +422,8 @@
             </div>
 
             <div class="split-card">
-                <p>Проточный парогенератор. Благодаря сильному давлению пар, температурой
-                    около 120-140&deg;C, быстро убивает вредоносные бактерии и грибок в труднодоступных
+                <p>Проточный парогенератор. Благодаря сильному давлению пар температурой
+                    около 120-140&deg;C быстро убивает вредоносные бактерии и грибок в труднодоступных
                     местах</p>
                 <img src="images/oborudivanie/par.webp" alt="Проточный парогенератор выдаваемый температуру 120-140 градусов" loading="lazy">
             </div>
@@ -725,14 +743,12 @@
     const cookieBanner = document.getElementById('cookieBanner');
     const cookieAccept = document.getElementById('cookieAccept');
 
-    // Если пользователь ещё не принял — показываем через 1 секунду
     if (!localStorage.getItem('cookieAccepted')) {
         setTimeout(() => {
             cookieBanner.classList.add('show');
         }, 1000);
     }
 
-    // По клику — скрываем и запоминаем
     cookieAccept.addEventListener('click', () => {
         cookieBanner.classList.remove('show');
         localStorage.setItem('cookieAccepted', 'true');
